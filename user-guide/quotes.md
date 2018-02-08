@@ -1,4 +1,4 @@
-# Quotes
+# Cotizaciones
 
 Quotes feature is available in [Advanced Pack](https://www.espocrm.com/extensions/advanced-pack/).
 
