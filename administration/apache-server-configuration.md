@@ -2,20 +2,34 @@
 
 These instructions are supplementary to the [Server Configuration](server-configuration.md) guideline. Please note that all configuration settings listed here are made on Ubuntu server.
 
+# Configuration du serveur Apache pour EspoCRM
+Ces instructions sont supplémentaires à la directive [Configuration du serveur] (server-configuration.md). Veuillez noter que tous les paramètres de configuration affichées ici sont faits sur le serveur Ubuntu
+
 ## PHP requirements
 
 To install all necessary libraries, run these commands in a terminal:
 
-```
 sudo apt-get update
 sudo apt-get install php-mysql php-json php-gd php-mcrypt php-zip php-imap php-mbstring php-curl
 sudo phpenmod mcrypt imap mbstring
 sudo service apache2 restart
-```
+
+## PHP Exigences 
+Pour installer toutes les bibliothèques nécessaires, demarrez ces commandes dans un terminal
+
+
+sudo apt-get mise à jour
+sudo apt-get installer php-mysql php-json php-gd php-mcrypt php-zip php-imap php-mbstring php-curl
+sudo phpenmod mcrypt imap mbstring
+sudo service apache2 restar
+
 
 ## Fixing the issue “API Error: EspoCRM API is unavailable”:
-
 Take only necessary steps. After each step check if the issue is solved.
+
+## Résolution du problème "Erreur API: l'API EspoCRM est indisponible":
+Prenez seulement les étapes nécessaires.Après chaque étape, vérifiez si le problème est résolu.
+
 
 ### 1. Enable “mod_rewrite” support in Apache
 
